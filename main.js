@@ -1,22 +1,18 @@
 console.log(customers);
 
-// let i = [3]
-
-
-
-function outputCustomerCards(array) {
-    for (let i of array) {
-      if (array[i]) {
-
-}}}
-
+// let i = [5];
 // Calls the root div
-      const outputDiv = document.getElementById("root");
+const outputDiv = document.getElementById("root");
 
+outputCustomerCards(customers);
+
+function outputCustomerCards(customers) {
+  for (i = 0; i < customers.length; i++) {
+    console.log(i);
+    if (customers[i]) {
       // Creates a div with class "customerCard" inside root div
       const customerCard = document.createElement("div");
       customerCard.classList.add("customer-card");
-      outputDiv.appendChild(customerCard);
 
       // Puts Customer Picture on customer card
       const customerPic = document.createElement("img");
@@ -65,8 +61,9 @@ function outputCustomerCards(array) {
         moment(customers[i].registered.date).format("MMM DD, YYYY");
       customerCard.appendChild(since);
 
-
-
-
+      outputDiv.appendChild(customerCard);
+    }
+  }
+}
 
 // end each loop with appendChild()
