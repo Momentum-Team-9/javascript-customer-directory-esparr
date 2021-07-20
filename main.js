@@ -1,6 +1,5 @@
 console.log(customers);
 
-// let i = [5];
 // Calls the root div
 const outputDiv = document.getElementById("root");
 
@@ -20,14 +19,14 @@ function outputCustomerCards(customers) {
       customerCard.appendChild(customerPic);
 
       // Puts First and Last Name on customer card
-      const firstName = document.createElement("h1");
+      const firstName = document.createElement("h2");
       firstName.innerText = customers[i].name.first;
       const lastName = customers[i].name.last;
       firstName.innerText += " " + lastName;
       customerCard.appendChild(firstName);
 
       // Puts Email Address on customer card
-      const email = document.createElement("h2");
+      const email = document.createElement("h3");
       email.classList.add("email-address");
       email.innerText = customers[i].email;
       customerCard.appendChild(email);
@@ -65,5 +64,3 @@ function outputCustomerCards(customers) {
     }
   }
 }
-
-// end each loop with appendChild()
