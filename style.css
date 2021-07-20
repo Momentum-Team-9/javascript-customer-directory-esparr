@@ -1,0 +1,10 @@
+#root {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.customer-card {
+    width: 200px;
+}
