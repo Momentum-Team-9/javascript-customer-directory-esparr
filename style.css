@@ -14,11 +14,11 @@ body {
 
 .customer-card {
   width: 200px;
+  margin: 20px 10px 20px 0;
 }
 
 img {
   width: 75%;
-  /* border-radius: 50%; */
   border-radius: 45% 95% 45% 95%;
 }
 
@@ -43,7 +43,7 @@ h2 {
 
 .address {
   font-size: 1em;
-  line-height: 0.1rem;
+  line-height: 0.15rem;
 }
 
 .dob {

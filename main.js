@@ -49,7 +49,7 @@ function outputCustomerCards(customers) {
       const dob = document.createElement("p");
       dob.classList.add("dob");
       dob.innerText =
-        "DOB: " + moment(customers[i].dob.date).format("MMM DD, YYYY");
+        "DOB: " + moment(customers[i].dob.date).format("MMM D, YYYY");
       customerCard.appendChild(dob);
 
       // Puts Customer Since on customer card
@@ -57,7 +57,7 @@ function outputCustomerCards(customers) {
       since.classList.add("customer-since");
       since.innerText =
         "Customer since: " +
-        moment(customers[i].registered.date).format("MMM DD, YYYY");
+        moment(customers[i].registered.date).format("MMM D, YYYY");
       customerCard.appendChild(since);
 
       outputDiv.appendChild(customerCard);
